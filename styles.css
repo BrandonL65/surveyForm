@@ -1,0 +1,49 @@
+.container1
+{
+  background-color: #A9D6D1;
+  height: 100%;
+  text-align: center;
+  padding-top: 1%;
+}
+
+.survey
+{
+  background-color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+}
+#survey-Form{
+  display: inline;
+}
+.label1
+{
+  margin-bottom: 3%;
+}
+.row
+{
+  margin-bottom: 1%;
+}
+.surveycolumn
+{
+  text-align: right;
+  padding-left: 20%;
+}
+.surveycolumn2
+{
+  text-align: left;
+}
+
+@media (max-width: 1000px)
+{
+  .surveycolumn
+  {
+    text-align: center
+  }
+  .surveycolumn2
+  {
+    text-align: center;
+  }
+}
