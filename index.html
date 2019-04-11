@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container1">
+      <h1 id="title">Survey Form</h1>
+
+      <div class="survey">
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+        <form id="survey-form">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 surveycolumn">
+              <label id="name-label"class="label1"for="name">* Name: </label>
+            </div>
+            <div class="col-lg-6 col-md-12 surveycolumn2">
+              <input id="name" type="text" name="name" id="name" value="" placeholder="Enter name"required> <br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 surveycolumn">
+              <label id="email-label"class="label1"for="email">* Email:</label>
+            </div>
+            <div class="col-lg-6 col-md-12 surveycolumn2">
+              <input type="email" name="email" id="email" value="" placeholder="Enter your email" required="email"><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 surveycolumn">
+              <label id="number-label"class="label1"for="number">* Age</label>
+            </div>
+            <div class="col-lg-6 col-md-12 surveycolumn2">
+              <input type="number" id="number" name="number" value="" placeholder="Enter age" min="1" max="100">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 surveycolumn">
+              <label for="dropdown">Which option best describes your current role?</label>
+            </div>
+            <div class="col-lg-6 col-md-12 surveycolumn2">
+              <select id="dropdown" name="">
+                <option value="Student">Student</option>
+                <option value="Full-Time-Job">Full Time Job</option>
+                <option value="Full-Time-Learner">Full Time Learner</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 surveycolumn">
+              <label for="radios">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+            </div>
+            <div class="col-lg-6 col-md-12 surveycolumn2">
+              <input type="radio" name="radios" value="Definitely"> Definitely<br>
+              <input type="radio" name="radios" value="Maybe"> Maybe<br>
+              <input type="radio" name="radios" value="Not Sure"> Not Sure
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 surveycolumn">
+              <label for="likemost">What do you like most in FCC:</label>
+            </div>
+            <div class="col-lg-6 col-md-12 surveycolumn2">
+              <select id="dropdown2" name="">
+                <option value="Challenges">Challenges</option>
+                <option value="Propjects">Projects</option>
+                <option value="Community">Community</option>
+                <option value="Open-Source">Open Source</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 surveycolumn">
+              <label for="improve">Things that should be improved in the future
+(Check all that apply):</label>
+            </div>
+            <div class="col-lg-6 col-md-12 surveycolumn2">
+              <input type="checkbox" name="improve" value="Front-end Projects"> Front-end Projects<br>
+              <input type="checkbox" name="improve" value="Back-End Projects"> Back-End Projects<br>
+              <input type="checkbox" name="improve" value="Data Visualization"> Data Visualization<br>
+              <input type="checkbox" name="improve" value="Challenges"> Challenges<br>
+              <input type="checkbox" name="improve" value="Open Source Community"> Open Source Community<br>
+              <input type="checkbox" name="improve" value="Glitter help rooms"> Glitter help rooms<br>
+              <input type="checkbox" name="improve" value="Videos"> Videos<br>
+              <input type="checkbox" name="improve" value="City Meetups"> City Meetups<br>
+              <input type="checkbox" name="improve" value="Wiki"> Wiki<br>
+              <input type="checkbox" name="improve" value="Forum"> Forum<br>
+              <input type="checkbox" name="improve" value="Additional Courses"> Additional Courses
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 surveycolumn">
+              <label for="comment">Any Comments or Suggestions?</label>
+
+            </div>
+            <div class="col-lg-6 col-md-12 surveycolumn2">
+              <textarea name="comment" id="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+          </div>
+          <div class="end">
+            <button type="submit" id="submit" form="survey-form" name="Submit">Submit</button>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </body>
+</html>
